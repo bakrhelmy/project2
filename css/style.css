@@ -159,8 +159,7 @@ nav ul li :hover {
 
 /* ************** start slider *************** */
 .slider{
-    padding-top: 120px;
-    padding-bottom: 200px;
+    padding-top: 80px;
 }
 .container-slider{
     width: 60%;
@@ -331,8 +330,6 @@ nav ul li :hover {
         height: 100vh; /* Reduce height for smaller screens */
     }
     .slider {
-        padding-top: 178px;
-        padding-bottom: 100px;
     }
     .slider-text p {
         font-size: 30px; /* Adjust text size */
@@ -354,8 +351,6 @@ nav ul li :hover {
         font-size: 8px; /* Smaller text for links */
     }
     .slider {
-        padding-top: 267px;
-        padding-bottom: 100px;
     }
     .slider-text p {
         font-size: 24px; /* Even smaller text for sliders */
