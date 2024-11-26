@@ -1,0 +1,836 @@
+:root{
+    --mainColor:#09c;
+}
+*{
+    font-family: 'HelveticaNeue LT 45';
+    padding: 0;
+    margin: 0;
+}
+body{
+
+}
+.container{
+    width: 75%;
+    margin: 0 auto;
+    
+}
+/* ******************************** */
+/* ***********  start search-bar ************* */
+.search-bar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* position: relative; */
+}
+.search-bar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 0px;
+    float: right;
+    padding: 12px 20px;
+    padding-right: 32px;
+}
+.search-bar ul li{
+    color: white;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.search-bar ul li a{
+    position: relative;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 0 10px;
+}
+.search-bar ul li i{
+    color: white;
+    
+}.search-bar ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -3px;
+    background: white;
+    height: 2px;
+    transition: left 0.3s ease-out, right 0.3s ease-out;
+}
+
+.search-bar ul li a:hover::after {
+    left: 0;
+    right: 0;
+}
+/* ***********  end search-bar ************* */
+
+
+
+/* ***********  start navbar ************* */
+.nav-bar{
+    padding-top: 10px;
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: space-between;
+    /* position: fixed; */
+}
+.logo{
+    margin-right: 10px;
+}
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left: 250px; */
+
+}
+nav{
+    margin-left: 15px; 
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+nav ul li{
+    padding: 0 5px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    margin: 10px;
+}
+.nav-content span{
+    
+}
+nav ul li :hover {
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+.menu-bar {
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    display: none;
+}
+@media screen and (max-width: 992px) {
+    nav {
+        display: none;
+    }
+    .menu-bar {
+        display: block;
+    }
+}
+
+/* ************** end navbar *************** */
+.background-image{
+    background-image: url(https://www.almasaoodenergy.me/files/cache/fb9e6200a6be3c814fa43c753a029e32_f5337.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 62vh;
+    /* position: absolute; */
+}
+.second-back{
+    background-image: url(https://www.almasaoodenergy.me/themes/almasaood/images/gradient.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 62vh;
+}
+
+
+/* ************** start slider *************** */
+.slider{
+    padding-top: 120px;
+    padding-bottom: 200px;
+}
+.container-slider{
+    width: 50%;
+    margin: 0 auto;
+    
+}
+.slider-text{
+
+}
+.slider-text p{
+    margin-bottom: 15px;
+    color:#ffffff;
+    font-family :'Montserrat', sans-serif;
+    font-size: 42px;
+    line-height:60px;
+    vertical-align:baseline;
+    letter-spacing:10px;
+    word-spacing:0px;
+    font-weight:700;
+    font-style:normal;
+    font-variant:normal;
+    text-transform:uppercase;
+    text-decoration:none solid rgb(255, 255, 255);
+    text-align:center;
+    text-indent:0px;
+}
+.slider-desc{
+    width: 80%;
+    margin: 0 auto;
+}
+.slider-desc p{
+    color:#ffffff;
+    font-family :"HelveticaNeue LT 45";
+    font-size:18px;
+    line-height:32px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    font-weight:400;
+    font-style:normal;
+    font-variant:normal;
+    text-transform:none;
+    text-decoration:none solid rgb(255, 255, 255);
+    text-align:center;
+    text-indent:0px;
+}
+.slider-text {
+    animation-name: slider-text;
+    animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slider-text {
+    from {
+        opacity: 0;
+        transform: translatey(100%);
+    }
+    to {  
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* ************** end slider *************** */
+
+/* Desktop (Default styles) */
+.background-image {
+    background-size: cover;
+    height: 62vh;
+}
+.slider {
+    padding-top: 120px;
+    padding-bottom: 200px;
+}
+.container-slider {
+    width: 50%;
+}
+.slider-text p {
+    font-size: 42px;
+    line-height: 60px;
+    letter-spacing: 10px;
+}
+.slider-desc p {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+
+/* Default styles (Desktop) */
+/* The current code already targets large screens */
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 90%; /* Adjust container width for medium screens */
+    }
+
+    .search-bar ul {
+        padding: 8px;
+        padding-right: 24px;
+    }
+
+    .search-bar ul li a {
+        font-size: 9px; /* Reduce font size */
+        padding: 0 8px;
+    }
+
+    .nav-bar {
+        padding-top: 5px;
+    }
+
+    .menu-bar {
+        display: block; /* Show the menu bar on medium screens */
+    }
+
+    nav {
+        display: none; /* Hide the full menu */
+    }
+
+    .slider {
+        padding-top: 80px;
+        padding-bottom: 150px;
+    }
+
+    .slider-text p {
+        font-size: 32px; /* Reduce the font size */
+        line-height: 45px;
+    }
+
+    .slider-desc p {
+        font-size: 14px; /* Reduce the description text size */
+        line-height: 28px;
+    }
+
+    .background-image, .second-back {
+        height: 50vh; /* Adjust height for medium screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 95%; /* Further reduce container width for small screens */
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .search-bar ul {
+        padding: 8px 0;
+        text-align: center;
+    }
+
+    .search-bar ul li {
+        padding: 5px 0;
+    }
+
+    .nav-bar {
+    }
+
+    .menu-bar {
+        font-size: 20px; /* Adjust menu bar size */
+    }
+
+    .slider-text p {
+        font-size: 24px; /* Smaller text for mobile */
+        line-height: 35px;
+    }
+
+    .slider-desc p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .background-image, .second-back {
+        height: 40vh; /* Smaller height for mobile */
+    }
+}
+/* Default Desktop Styles */
+.flar {
+    margin: 80px 25px;
+}
+
+.flar p {
+    margin-top: 40px;
+    color: #092a30;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+
+.flar ul li {
+    margin-top: 40px;
+    color: #092a30;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Default Image Grid (3 Columns) */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 80px 0px;
+}
+
+.image-item {
+    border: 2px solid #092a30;
+    padding: 10px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Tablet Screens (992px and smaller) */
+@media screen and (max-width: 992px) {
+    .flar p, .flar ul li {
+        font-size: 15px; /* Slightly smaller text */
+        line-height: 26px;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        gap: 15px;
+    }
+}
+
+/* Mobile Screens (768px and smaller) */
+@media screen and (max-width: 768px) {
+    .flar p, .flar ul li {
+        font-size: 14px; /* Smaller text for mobile */
+        line-height: 24px;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        gap: 10px;
+    }
+}
+
+/* Extra Small Phones (576px and smaller) */
+@media screen and (max-width: 576px) {
+    .flar p, .flar ul li {
+        font-size: 13px; /* Smallest font size for readability */
+        line-height: 22px;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr; /* Keep it single-column */
+        gap: 8px;
+    }
+}
+
+/* ************** start get setion *************** */
+.get-start{
+    background-image: url(https://www.almasaoodenergy.me/files/2214/6296/6901/r.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+}
+.get-content{
+text-align: center;
+padding: 150px;
+
+}
+.get-content h3{
+    color: white; /* Main theme color */
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif; /* Use the Montserrat font */
+    line-height: 56px; /* Line height for proper spacing */
+    vertical-align: baseline; /* Align baseline vertically */
+    letter-spacing: 5px; /* Add spacing between letters */
+    word-spacing: 0px; /* No extra spacing between words */
+    font-weight: 700; /* Make the text bold */
+    font-style: normal; /* Normal font style */
+    font-variant: normal; /* No font variations */
+    text-transform: uppercase; /* Convert text to uppercase */
+    text-decoration: none; /* No text decorations (e.g., underline) */
+    text-align: center; /* Center the text horizontally */
+    text-indent: 0px; /* No indentation */
+}
+.get-content p{
+    color: white; /* Text color */
+    font-size: 17px; /* Font size for paragraph text */
+    line-height: 30px; /* Line height for proper spacing */
+    vertical-align: baseline; /* Align text to baseline */
+    letter-spacing: normal; /* Default letter spacing */
+    word-spacing: 0px; /* No additional word spacing */
+    font-weight: 400; /* Normal font weight */
+    font-style: normal; /* Normal font style */
+    font-variant: normal; /* No font variations */
+    text-transform: none; /* No text transformation */
+    text-decoration: none; /* No text decorations (e.g., underline) */
+    text-align: center; /* Center-align the text */
+    text-indent: 0px; /* No text indentation */
+    font-family: "Montserrat", sans-serif; /* Font family */
+    /* margin-top: 40px; */
+    /* margin-bottom: 20px;  */
+}
+.get-content a{
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    vertical-align: baseline;
+    word-spacing: 0px;
+    font-style: normal;
+    font-variant: normal;
+    text-align: center;
+    text-indent: 0px;
+    margin-top: 30px;
+    border: 1px solid #bababa;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s all ease;
+    letter-spacing: 5px;
+}
+.get-content a:hover{
+    color: #092a30;
+    background-color: white; 
+}
+/* ************** end get setion *************** */
+/* Tablet screens (900px and below) */
+@media screen and (max-width: 900px) {
+    /* Additional Section */
+    .inner {
+        padding: 40px;
+    }
+    .all-content h3 {
+        font-size: 32px; /* Smaller heading font size */
+        letter-spacing: 3px; /* Reduced letter spacing */
+    }
+    .all-content p {
+        font-size: 15px; /* Adjust paragraph font size */
+    }
+    .all-content button {
+        padding: 15px 20px;
+        font-size: 12px;
+    }
+
+    /* Get Started Section */
+    .get-start {
+        height: 60vh; /* Adjust height for mobile screens */
+    }
+    .get-content {
+        padding: 80px 20px;
+    }
+    .get-content h3 {
+        font-size: 24px; /* Reduced heading size */
+        line-height: 40px;
+    }
+    .get-content p {
+        font-size: 14px; /* Smaller paragraph text */
+    }
+    .get-content a {
+        font-size: 12px;
+        padding: 12px 18px;
+    }
+}
+
+/* Mobile screens (768px and below) */
+@media screen and (max-width: 768px) {
+    /* Additional Section */
+    .inner {
+        padding: 30px;
+    }
+    .all-content h3 {
+        font-size: 28px; /* Further reduce heading size */
+        letter-spacing: 2px;
+    }
+    .all-content p {
+        font-size: 14px; /* Adjust paragraph size */
+    }
+    .all-content button {
+        padding: 12px 18px;
+        font-size: 11px;
+    }
+
+    /* Get Started Section */
+    .get-start {
+        height: 50vh;
+    }
+    .get-content {
+        padding: 60px 20px;
+    }
+    .get-content h3 {
+        font-size: 20px; /* Heading further reduced */
+    }
+    .get-content p {
+        font-size: 13px;
+    }
+    .get-content a {
+        font-size: 11px;
+        padding: 10px 15px;
+    }
+}
+
+/* Small mobile screens (480px and below) */
+@media screen and (max-width: 480px) {
+    /* Additional Section */
+    .inner {
+        padding: 20px;
+    }
+    .all-content h3 {
+        font-size: 22px; /* Compact heading size */
+        letter-spacing: 1px;
+    }
+    .all-content p {
+        font-size: 12px; /* Smaller text */
+    }
+    .all-content button {
+        padding: 10px 15px;
+        font-size: 10px;
+    }
+
+    /* Get Started Section */
+    .get-start {
+        height: 40vh;
+    }
+    .get-content {
+        padding: 50px 10px;
+    }
+    .get-content h3 {
+        font-size: 18px; /* Compact heading */
+    }
+    .get-content p {
+        font-size: 12px;
+    }
+    .get-content a {
+        font-size: 10px;
+        padding: 8px 12px;
+    }
+}
+
+/* ************** start footer setion *************** */
+footer {
+    background-color: #102326; 
+    color: #FFFFFF; 
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.foot1{
+
+}
+.sub{
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #bababa;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 15px 20px;
+    color: white;
+    transition: 0.6s all ease;
+    letter-spacing: 5px;
+}
+.sub:hover{
+    color: #092a30;
+    background-color: white;
+}
+.foot2 button{
+    
+}
+.foot3{
+
+}
+footer .footer-content  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.social-icons2 {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.social-links2 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links2 li {
+    display: inline-block;
+}
+
+.social-links2 a {
+    color: #ffffff;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
+}
+.social-icons2 ul li {
+    list-style: none;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 5px 0;
+    text-align: center;
+}
+.social-links2 a:hover {
+    color: #00aaff; 
+    transform: scale(1.1);
+}
+
+footer .bottom-bar {
+    margin-top: 30px;
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+.line2{
+    
+        height: 1px; /* Adjust thickness */
+        background-color: #E8E8E8; /* Adjust to match the exact line color */
+}
+/* ************** start footer setion *************** */
+/* Tablet screens (900px and below) */
+@media screen and (max-width: 900px) {
+    footer .footer-content {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center;
+    }
+
+    footer .footer-section {
+        min-width: auto;
+        text-align: center; /* Center the content for smaller screens */
+    }
+
+    footer .social-icons2 {
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    footer .bottom-bar {
+        font-size: 0.8em; /* Smaller font size for mobile */
+        margin-top: 20px;
+    }
+
+    footer .footer-content li {
+        margin-bottom: 10px; /* Add space between links */
+    }
+}
+
+/* Mobile screens (768px and below) */
+@media screen and (max-width: 768px) {
+    footer .footer-content {
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+
+    footer .footer-section {
+        min-width: 100%;
+        text-align: center; /* Ensure all text is centered */
+    }
+
+    footer h3 {
+        font-size: 1.1em; /* Smaller footer heading */
+        margin: 15px 0;
+    }
+
+    footer ul li {
+        margin: 8px 0; /* Adjust spacing between links */
+    }
+
+    footer .social-icons2 {
+        padding: 15px 0;
+        justify-content: center;
+    }
+
+    footer .social-links2 a {
+        font-size: 1.2em; /* Slightly smaller social icons */
+    }
+
+    footer .bottom-bar {
+        font-size: 0.75em; /* Even smaller text for mobile */
+        opacity: 0.6;
+    }
+
+    footer .line2 {
+        width: 100%;
+    }
+}
+
+/* Small mobile screens (480px and below) */
+@media screen and (max-width: 480px) {
+    footer {
+        padding: 30px 15px; /* Reduce padding for very small screens */
+    }
+
+    footer h3 {
+        font-size: 1em; /* Further reduce heading font size */
+        margin: 20px 0;
+    }
+
+    footer ul li {
+        margin: 6px 0;
+    }
+
+    footer .social-icons2 {
+        gap: 8px;
+        padding: 10px 0;
+    }
+
+    footer .social-links2 a {
+        font-size: 1.1em; /* Smaller social icon size */
+    }
+
+    footer .bottom-bar {
+        font-size: 0.7em; /* Very small font for bottom bar */
+    }
+}
+    
